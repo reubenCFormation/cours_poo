@@ -4,7 +4,7 @@
 PARTIE 1)
     1) Creer une classe Game. Cette classe aura une proprieté $level qui sera par defaut mis a zero.
 
-    2) Creer une methode qui va detrminer si le jeu est gagné ou pas. Si $level est superieur ou egal a 5, le jeu est gagné, sinon le jeu n'est pas gagné. Cette fonction va nous retouner un boolean.
+    2) Creer une methode qui va detrminer si le jeu est gagné ou pas. Si $level est superieur ou egal a 5, le jeu est gagné, sinon le jeu n'est pas gagné. Cette methode va nous retouner un boolean.  
 
     3) Creer une instance de Game et faites en sorte de gagner le jeu en incrementer la proprieté $level. Pour savoir si le jeu est gagné, faites appel a la methode qui determinera si le jeu est gagné ou pas. Si le jeu est gagné, affichez un message de feliciations
 
@@ -18,7 +18,7 @@ PARTIE 2)
  2) Rajoutez une proprieté $arr a votre class et donnez lui un tableau avec 3 valeurs par defaut 
     a) Creer une methode que vous allez appeler getArrInfo. Cette methode nous affichera chaque valeur de notre proprieté $arr et va aussi nous afficher la longeur de $arr 
     
-    b) Creer une autre methode que vous allez appeler pushArrValues. Dans cette methode, faites en sorte de rajouter un element a botre proprieté $arr. BONUS. Faites en sorte de mettre un parametre a pushArrValues pour pouvoir ajouter une valeur differente a chaque appel de la fonction 
+    b) Creer une autre methode que vous allez appeler pushArrValues. Dans cette methode, faites en sorte de rajouter un element a votre proprieté $arr. BONUS. Faites en sorte de mettre un parametre a la methode pushArrValues pour pouvoir ajouter une valeur differente a chaque appel de la fonction 
 
     c) Creer encore une instance (un objet) de votre classe. Faites appel a la methode getArrInfo. Ensuite faites appel a la methode pushArrValues. De nouveau faites appel a la methode getArrInfo et constater que la nouvelle valeur a bien etait rajouté dans votre tableau
 

@@ -11,7 +11,7 @@
 
 5) Enfin, dans vos classes Mammal et Reptile, creer dans chacune une methode statique pour pouvoir recuperer dans votre base de données tous les animaux qui ont le meme type que le $type defini pour votre classe
 
-6) BONUS: Dans votre classe Animal, creer une fonction qui va pouvoir recuperer tous nos animaux. Retourner un seul tableau avec des instances de Mammal ou de Reptile. Votre fonction doit etre statique
+6) BONUS: Dans votre classe Animal, creer une fonction qui va pouvoir recuperer tous nos animaux. Retourner un seul tableau qui contiendront vos instances (soit Mammal, soit Reptile). Votre fonction doit etre statique
 
 
 

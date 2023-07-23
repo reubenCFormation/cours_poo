@@ -16,9 +16,9 @@ Creer un dossier qui s'apelle ex5. Creer un fichier Animal.php, ainsi que un fic
 
 4) apres avoir pu inserer plusiers animaux en base de données, trouvez un moyen de pouvoir tous les recuperer avec une methode statique! Pour faire ceci, rajoutez une proprieté privé $id a votre classe et ajoutez la au constructeur. Faites la meme chose que vous avez vu dans la classe User.
 
-5) ajoutez une proprieté privé statique qui sera un integer et qui va s'appeler $count, elle sera null par defaut
+5) ajoutez une proprieté (privé ou publique) statique qui sera un integer et qui va s'appeler $count, elle sera null par defaut
 
-6) ajoutez une methode statique pour nous retourner le nombre d'animaux dans notre base de données et en meme temps mettez a jour la proprieté statique $count et la proprieté statique $cont.
+6) ajoutez une methode statique pour nous retourner le nombre d'animaux dans notre base de données et en meme temps mettez a jour la proprieté statique $count dans la methode.
 
 7) trouvez un moyen de pouvoir acceder aux nombres d'animaux dans notre base de données EN DEHORS de notre classe Animal
 

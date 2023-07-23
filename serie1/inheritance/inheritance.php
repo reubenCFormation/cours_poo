@@ -7,8 +7,10 @@
 // ici je vais creer une classe Parent que je vais appeler Parent
 
 class ParentClass{
-    // remarequer ici que nous avons le mot clé protected. Nous l'avons pas vu auparavant. Le mot clé protected designe que une classe enfant y aura access a la proprieté mais elle ne pourra tous de meme PAS etre utilisé directement sur une instance EN DEHORS de la classe
+    // remarequer ici que nous avons le mot clé protected. Nous l'avons pas vu auparavant. Le mot clé protected designe que une classe enfant y aura access a la proprieté mais elle ne pourra tous de meme PAS etre utilisé directement sur une instance EN DEHORS de la classe.
     protected string $role;
+    // cette proprieté étant en privé ne sera pas accessible dans la classe heritante. Il est donc fortement reccomandé, lors que vous voulez y donnez access a vos classes enfants, de mettre le mot protected!
+    private $parentOnly="Parent Only";
 
     
     
@@ -19,6 +21,8 @@ class ParentClass{
        
         
     }
+
+
 
     public static function getParentMessage(){
        echo "Je suis le parent et je donne access a cette methode statique a mes enfants!<br/>";
@@ -41,7 +45,7 @@ class ChildClass extends ParentClass{
     
 
 }
-// comme nous pouvons le voir ici, nous n'avons rien rajouter dans notre classe ChildClass. Pourtant, elle arrive bien a avoir access aux methodes et aux proprietés de notre classe ParentClass GRACE au fait que via la commande "extends" elle herite des methodes et propreités de la classe ParentClass et donc y a access!
+// comme nous pouvons le voir ici, nous n'avons rien rajouté dans notre classe ChildClass. Pourtant, elle arrive bien a avoir access aux methodes et aux proprietés de notre classe ParentClass GRACE au fait que via l'instruction "extends" elle herite des methodes et propreités de la classe ParentClass et donc y a access!
 $child=new ChildClass("child");
 ChildClass::getParentMessage();
 echo $child->getRole();
