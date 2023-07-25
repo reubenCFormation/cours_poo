@@ -7,6 +7,7 @@ class Mammal extends Animal{
         // ici l'enfant va definir $species et $type et via l'heritage il y aura access et pourra modifier/definir les valeurs sans devoir les redeclarer etant donnée que il y hérite
         
         $this->setType("Mammal");
+        // logiquement un espece va decouler d'un $type (Mammal ou Reptile, il serai donc aussi pertinent de definir $species ici)
         $this->species=$species;
         
         
@@ -16,6 +17,15 @@ class Mammal extends Animal{
        
 
        
+    }
+    // ici etant donnée que nous allons definir notre proprieté $type dans l'enfant, je vais logiquement mettre mon setter pour la proprieté $type dans l'enfant. Etant donnée que 
+
+    public function setType($type){
+        if($type!="Mammal"){
+            throw new \Exception("Mauvais type preciser!");
+           
+        }
+        $this->type=$type;
     }
 
     

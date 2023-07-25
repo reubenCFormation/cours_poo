@@ -13,9 +13,11 @@
   // je vais creer ma premiere classe
 
   class MyFirstClass{
-    // ici j'ai une proprieté. Une proprieté est une valeur que nous pouvons choisir sauf une fonction. Une proprieté peux donc etre un tableau,une chaine de caracteres, une valeur numerique etc. Dans ce cas precis, $name est null car je ne lui ai precisé aucune valeur mais, nous allons voir que par la suite, je vais pouvoir lui preciser des valeurs.
+    // ici j'ai une proprieté. Une proprieté est une valeur defini dans la classe que nous pouvons choisir (sauf une fonction). Une proprieté peux donc etre un tableau,une chaine de caracteres, une valeur numerique etc. Dans ce cas precis, $name est null car je ne lui ai precisé aucune valeur mais, nous allons voir que par la suite, je vais pouvoir lui preciser des valeurs.
 
      public $name;
+     // ici chaque instance de notre classe MyFirstClass aura une proprieté $definedName qui sera egale a "a defined name".
+     public $definedName="a defined name";
     
 
 

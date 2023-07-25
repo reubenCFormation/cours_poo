@@ -4,8 +4,7 @@
 1)Creer une classe Shelter. Cette classe aura une proprieté $name qui sera son nom, une proprieté $animals qui sera un tableau vide par defaut, une proprieté $city qui sera une chaine de caracteres et une proprieté $maximum qui sera un integer. Enfin, nous allons aussi avoir une proprieté $acceptsWild qui sera un boolean et par defaut sera false. Dans votre constructuer, definissez $name, $city et $maximum, ne touchez pas a $animals ou a $acceptsWild dans votre constructeur
 
 
-2)
- creer une methode addAnimal qui prend un parametre. Ce parametre DOIT correspondre a une instance de la classe Animal que vous aviez creé precedement. 
+2)creer une methode addAnimal qui prend un parametre. Ce parametre DOIT correspondre a une instance de la classe Animal que vous aviez creé precedement. 
  a) Si $acceptsWild est a false, assurez vous que l'animal que vous allez rajouter est domestiqué. Si il n'est pas domestiqué et que $acceptsWild est a false, lancez une erreur en utilisant la classe Exception 
  b)Assurez vous aussi que il y a suffisament de place pour un nouveau animal dans le Shelter (pensez a notre tableau $animals). Si il n'y a pas suffisament de place, lancez encore une erreur avec la classe Exception
  Si vos controles passent, ajoutez l'instance de l'animal a votre proprieté $animals avec un setter

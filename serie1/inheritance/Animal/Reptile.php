@@ -8,6 +8,7 @@ class Reptile extends Animal{
 
         // ici l'enfant va definir $species et $type et via l'heritage il pourra modifier/definir les valeurs sans devoir les redeclarer etant donnée que il y herite!
         $this->setType("Reptile");
+        // logiquement un espece va decouler d'un $type (Mammal ou Reptile, il serai donc aussi pertinent de definir $species ici)
         $this->species=$species;
         
         parent::__construct($name,$legs,$weight);
@@ -16,11 +17,16 @@ class Reptile extends Animal{
 
     }
 
+    public function setType($type){
+        if($type!="Reptile"){
+            throw new \Exception("Mauvais type preciser!");
+        }
+        $this->type=$type;
+    }
+
+
    
  
-
-
-  
 }
 
 $turtie=new Reptile("Turtle","Turtie",4,80);

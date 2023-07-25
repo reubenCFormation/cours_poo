@@ -11,7 +11,7 @@ PARTIE 1)
 
 
 PARTIE 2)
- 1)Creer une classe (choissisez le nom) et donnez lui une proprieté $name. Cette proprieté $name aura une valeur par defaut que vous allez choisir mais faites en sorte que ca soit une chaine de caractere. Ecrivez une methode que vous allez appeler getStringInfo qui va nous afficher la phrase suivante: la propriete s'apelle {valeur de ma properité} et elle comporte {nombre_de_caracteres dans la proprieté}.
+ 1)Creer une classe MySecondClass et donnez lui une proprieté $name. Cette proprieté $name aura une valeur par defaut que vous allez choisir mais faites en sorte que ca soit une chaine de caractere. Ecrivez une methode que vous allez appeler getStringInfo qui va nous afficher la phrase suivante: la propriete s'apelle {valeur de ma properité} et elle comporte {nombre_de_caracteres dans la proprieté}.
     a) Creer une instance de votre classe (un objet) sans changer la proprieté $name par defaut que vous avez donnez et ensuite faites appel a la methode getStringInfo
     b) Creer une deuxieme instance de votre classe et cette fois si, faites en sorte de modifier la properité $name SANS TOUCHER au code a l'interieur de la classe. Verifiez que cette proprieté $name a bien etait modifiez en faisant appel a la methode getStringInfo de cette deuxieme instance
  

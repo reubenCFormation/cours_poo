@@ -31,17 +31,7 @@ class Animal{
        
     }
     // Ici je protege mon setter pour faire en sorte que nous pouvons pas mettre n'importe quoi. Nous devons soit choisir "Reptile" soit "Mammal". On aurai pu continuer a proteger ce code en mettant cette methode dans les classes enfants mais pour le moment ca suffira. Je mets également ma fonction en protected pour m'assurer que elle ne pourra pas étre appeler directement sur une Instance (meme si ce n'est pas strictement neccesaire de faire cela).
-    protected function setType($type){
-        if($type=="Mammal" || $type=="Reptile"){
-            $this->type=$type;
-           
-        }
-
-        else{
-            throw new Exception("Viullez choisir soit Reptile soit Mammal pour vos types!");
-        }
-       
-    }
+ 
 
     public  function getType(){
         return $this->type;
