@@ -46,9 +46,7 @@ require_once('./Connect.php');
         }
 
         catch(PDOException $e){
-            echo '<pre>';
-            var_dump($e);
-            echo '</pre>';
+           
             echo $e->getMessage();
         }
         
