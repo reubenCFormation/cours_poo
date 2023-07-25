@@ -1,6 +1,6 @@
 <?php
  /*
-   Nous avons vu comment meiux proteger nos proprietés pour ne pas pouvoir changer a la volée une proprieté que on ne souhaiterai pas changer. Nous comprenons peut etre un peu mieux a quoi peuvent servir les getters et les setters. Cependant,rien ne nous empeche de faire n'importe en mettant une valeur abberante dans un setter. Meme si les programmeurs sont censés etre raisonnable, un staigaire ou un junior peux quand meme faire des petits erreurs 
+   Nous avons vu comment meiux proteger nos proprietés pour ne pas pouvoir changer a la volée une proprieté que on ne souhaiterai pas changer. Nous comprenons peut etre un peu mieux a quoi peuvent servir les getters et les setters. Cependant,rien ne nous empeche de faire n'importe en mettant une valeur abberante dans un setter. Meme si les programmeurs sont censés etre raisonnable, on est toujours susceptible de commetre des erreurs!
 
 
  */
