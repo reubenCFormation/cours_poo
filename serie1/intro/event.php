@@ -64,14 +64,17 @@ class Event{
 }
 // remarquer ici que dans mon constructeur, la proprieté $participants ainsi que la properieté $activities est vide. Je n'ai donc pas besoin de les definir lors que j'instancie ma classe!
 
-/*
+
 $event1=new Event("Lecture");
+
 $event1->addActivity("Lecture de polars!");
 $event1->addActivity("Lecture de romans d'amour!");
-/*
+
 echo "VOIR LES ACTIVITES de L'EVENMENT!<br/>";
+echo '<pre>';
 var_dump($event1->activities);
-*/
+echo '</pre>';
+
 
 
 
@@ -79,19 +82,22 @@ var_dump($event1->activities);
 
 // ici je vais rajouter trois participants
 
-/*
+
 $event1->addParticipant("Reuben");
 $event1->addParticipant("Johnny");
 $event1->addParticipant("Toto");
-*/
+
+
+
 
 
 // en faisiant appel a la methode isEventFull, je vais pouvoir savoir si l'evenment est complet ou non!
-/*
-echo "VOIR LES PARTICIPANTS DE L'EVENMENT! <br/>";
 
+echo "VOIR LES PARTICIPANTS DE L'EVENMENT! <br/>";
+echo '<pre>';
 var_dump($event1->participants);
-*/
+echo '</pre>';
+
 
 
 

@@ -7,7 +7,7 @@
 3) Creer des instances (objets) de votre classe Animal. Faites appel a la methode que vous venez de creer et en fonction de si l'animal (l'instance) est adoptable ou non, vous devez voir le message correspondant s'afficher
 
 BONUS! 
-Dans votre constructuer, faites en sorte que un animal ne peux pas avoir plus de 10 jambes ni peser plus de 500 kilos. Faites cette controle avec un getter. Rechercher ce que c'est un getter. Si un animal a plus de 10 jambes, lancez une erruer (Exception)
+Dans votre constructuer, faites en sorte que un animal ne peux pas avoir plus de 10 jambes ni peser plus de 500 kilos. Faites cette controle avec un getter. Rechercher ce que c'est un getter. Si un animal a plus de 10 jambes, lancez une erreur (Exception)
 
 
 */

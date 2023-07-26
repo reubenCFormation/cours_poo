@@ -20,12 +20,10 @@ class Person{
 
 // ici remarquer les trois arguments lors que j'instancie ma classe. Ces trois arguments correponderont aux trois parametres que j'ai defini dans mon constructuer (public function __construct) plus haut. Ainsi, lors que je vais instancier ma classe Person, je vais en meme temps definir des valeurs par defaut pour cette objet qui sera une instance de la classe Person. Ce sont en quelque sorte des valeurs par defaut.
 
-$person1=new Person("Reuben",33,"male");
-/*
-echo $person1->age;
-echo '<br/>';
-echo $person1->name;
-*/
+$newPerson=new Person("Reuben",33,"male");
+
+
+
 
 
 // J'ai eu mon anniversaire il y a un jour. J'ai donc changé d'age, et j'ai 10 ans de moins et je ne suis plus chauve! Je vais donc devoir mettre a jour mon age 
