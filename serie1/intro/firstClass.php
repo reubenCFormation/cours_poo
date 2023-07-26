@@ -34,6 +34,20 @@
         }
         
      }
+
+     public function getDefinedName(){
+      echo "METHOD CALLED! <br/>";
+      echo '<pre>';
+      var_dump($this->definedName);
+      echo '</pre>';
+       
+     }
+
+     public function getName(){
+       echo '<pre>';
+       var_dump($this->name);
+       echo '</pre>';
+     }
   }
 
 // ici je vais creer un objet. Cette objet sera une INSTANCE de la classe MyFirstClass et donc cette objet va avoir access aux proprietés et methodes de MyFirstClass. Il pourra utiliser et definir ce que MyFirstClass va lui fournir et MyFirstClass lui fourni une proprieté name ainsi que une methode getInfo!
@@ -42,6 +56,30 @@
 
 
   $obj1=new MyFirstClass();
+  /*
+  echo '<pre>';
+  var_dump($obj1->definedName);
+  echo '</pre>';
+  */
+ // ici je precise une nouvelle valeur de la proprieté $defindName sur l'instance
+  $obj1->definedName="New Value";
+  /*
+  $obj1->getDefinedName();
+  */
+ /*
+  $newMyFirstClass=new MyFirstClass();
+  $newMyFirstClass->definedName="Value that I have chosen";
+  $newMyFirstClass->getDefinedName();
+  */
+
+  $obj2=new MyFirstClass();
+  $obj2->getName();
+
+
+  
+  
+
+
   // Remarquer le ->. Le -> est la notation pour acceder a une proprieté ou a une methode d'une classe! Ici $obj1->name nous retournera null car nous n'avons defini aucun $name par defaut
 
   /*
