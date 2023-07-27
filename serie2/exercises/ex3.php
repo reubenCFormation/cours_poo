@@ -17,8 +17,8 @@
   b) Creer aussi un fichier que vous allez appeler insert.php et qui va nous afficher un formulaire pour inserer un Animal. Ce formulaire aura tous les champs correspondant (name,legs,weight,species). Pour determiner le type de notre animal, faites en select avec 2 choix (Mammal ou Reptile). 
   c)Creer un fichier header.php qui aura un lien accueil (ce lien va nous afficher tous nos animaux) et qui contiendra aussi un lien pour inserer un aniamal
 
-8) Dans le dossier controller. Creer un fichier que vous allez appeler BaseController et donnez lui le meme contenu que on vient de voir (une fonction render et redirect). Creer un fichier que vous allez appeler AnimalController et creez y une classe que vous allez appeler AnimalController. 
- Mettez tous classes dans le namespace controller!
+8) Dans le dossier controller. Creer un fichier que vous allez appeler BaseController et donnez lui le meme contenu que on vient de voir (une fonction render et redirect). Creer un fichier que vous allez appeler AnimalController.php et creez y une classe que vous allez appeler AnimalController. 
+ Mettez votre class AnimalController dans le namespace controller!
     a) Cette classe aura une methode pour recuperer tous nos animaux EN UTILISANT notre model Animal et ainsi va les transmettre a une vue. Pour preciser, nous allons transmettre un tableau d'objets a la vue, pas un tableau associatif. 
 
     b)Ecrivez une autre methode dans la classe AnimalController pour pouvoir acceder a un animal en particulier toujours DEPUIS le model Animal et transmettre les informations concernant cette animal a une vue differente. 

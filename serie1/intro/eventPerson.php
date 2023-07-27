@@ -35,7 +35,7 @@ class Event{
         }
 
         else{
-            echo "Evenment complet!";
+          echo "Evenment complets!";
         }
        
     }
@@ -71,6 +71,7 @@ class Event{
 $person1=new Person("Amandine",30,"female");
 $person2=new Person("Alexis",27,"male");
 $person3=new Person("Yoda",100,"male");
+$person4=new Person("Billie",24,"male");
 
 // ici je vais creer une evenement et je vais lui rajouter des participants!
 
@@ -87,7 +88,9 @@ $newEvent->addParticipant($person1);
 $newEvent->addParticipant($person2);
 $newEvent->addParticipant($person3);
 
-/*
+
+
+
 echo '<pre>';
 var_dump($newEvent->participants);
 echo '</pre>';
@@ -96,7 +99,7 @@ echo '<br/>';
 
 $newEvent->showParticipantInfo();
 
-*/
+
 
 
 ?>
