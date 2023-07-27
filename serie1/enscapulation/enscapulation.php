@@ -1,4 +1,5 @@
 <?php
+
  /*
     Le concept d'enscapulation fait reference a l'idée de l'accesibilité de nos proprietés et plus globalement fait aussi reference a la securisation de nos données. Il y a trois modes de visibilité pour nos proprietés et nos fonctions. Pour le moment nous allons que nous focaliser sur deux d'entres elles
     1)public. Jusqa present, tous nos proprietés ainsi que nos fonctions ont etait en visiblité public. Ceci veux dire que nos instances (objets) peuvent a tous moment modifier nos proprietés
@@ -42,6 +43,9 @@
  }
 
  $newEmployee=new Employee(23,"Johnny",30);
+ 
+ 
+
  // Ceci va nous lancer une erreur fatale car la proprieté $age est private et nous ne pouvons en aucun cas l'utiliser en dehors de notre classe!
  /*
  $newEmployee->age=30;

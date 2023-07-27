@@ -49,6 +49,10 @@
     public function getAge(){
         return $this->age;
     }
+
+    public function getName(){
+        return $this->name;
+    }
  }
 
 // que va t'il se passer si je mets n'importe quoi pour le salaire de mon employé?
@@ -60,8 +64,17 @@
 // finalement remarquer que nous ne pouvons pas modifier le nom d'un employé. Nous pouvons seulment l'initialiser dans notre constructeur!
 
 $newEmployee=new Employee(30,"Jeremy",40);
+
 // va lancer une erreur!;
 //$newEmployee->name="Blahblah";
+echo "Age";
+var_dump($newEmployee->getAge());
+echo '<br/>';
+echo "Salaire <br/>";
+var_dump($newEmployee->getSalary());
+
+$newEmployee->setSalary(50);
+
 
 
 
