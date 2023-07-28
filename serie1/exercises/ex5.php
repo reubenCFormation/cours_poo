@@ -5,14 +5,16 @@ Reprenez votre classe Animal crée depuis et placez son contenu dans le fichier 
 
 1) Creer une base de données que vous allez appelez my_animals
 2) Creer une table animals qui aura les champs suivants:
-    a) id INT PRIMARY KEY AUTO_INCREMENT NOT NULL
-    b) name VARCHAR (255) NOT NULL
-    c) type VARCHAR (255) NOT NULL
-    d) legs INT NOT NULL
-    e) weight INT NOT NULL
-    f) isDomestic TINYINT (1) NOT NULL DEFAULT 1
+   CREATE TABLE if not exists animals(
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    name VARCHAR (255) NOT NULL,
+    type VARCHAR (255) NOT NULL,
+    weight VARCHAR (255) NOT NULL,
+    legs INT NOT NULL,
+    isDomestic TINYINT NOT NULL DEFAULT 1
+    );
 
-3) Utilisez ce jeu de données pour le moment et executer les lignes suivantes
+3) Utilisez ce jeu de données pour le moment et executer les lignes suivantes dans votre bdd sur phpmyadmin
 INSERT INTO animals(name,type,legs,weight,isDomestic) VALUES('goldie','mammal',4,80,1);
 INSERT INTO animals(name,type,legs,weight,isDomestic) VALUES('cattie','mammal',4,25,1);
 INSERT INTO animals(name,type,legs,weight,isDomestic) VALUES('fluffy','mammal',4,70,1);
@@ -22,7 +24,7 @@ INSERT INTO animals(name,type,legs,weight,isDomestic) VALUES('hulk','monster',2,
 
 
 
-4) Trouvez un moyen de pouvoir recuperer tous vos animaux avec une methode statique
+4) Trouvez un moyen de pouvoir recuperer tous vos animaux avec une methode statique. Retourner un tableau d'instances d'animaux
 
 5) ajoutez une proprieté privé statique qui sera un integer et qui va s'appeler $count, elle sera null par defaut
 

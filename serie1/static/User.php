@@ -30,19 +30,28 @@ require_once('./Connect.php');
             $dbConnector=Connect::connectToDb();
            
         
-        $sql="SELECT * FROM users";
-        $statement=$dbConnector->query($sql);
+            $sql="SELECT * FROM users";
+            $statement=$dbConnector->query($sql);
        
        
-        $users=$statement->fetchAll(PDO::FETCH_ASSOC);
-        $usersObjArr=[];
+            $users=$statement->fetchAll(PDO::FETCH_ASSOC);
+            $usersObjArr=[];
 
-        foreach($users as $user){
-            $usersObjArr[]=new User($user["firstname"],$user["lastname"],$user["email"],$user["password"],$user["id"]);
-        }
+            foreach($users as $user){
+                 $usersObjArr[]=new User($user["firstname"],$user["lastname"],$user["email"],$user["password"],$user["id"]);
+            }
         
-        return $usersObjArr;
-       
+        
+            return $usersObjArr;
+        
+
+      // Facon alternatif de faire un peu plus compliqué! 
+        /*
+        $usersObj=$statement->fetchAll(PDO::FETCH_CLASS| PDO::FETCH_PROPS_LATE, self::class,["test","test","test","test",1]);
+
+        return $usersObj;
+        */
+    
         }
 
         catch(PDOException $e){
@@ -52,21 +61,22 @@ require_once('./Connect.php');
         
     }
 
-  public function setEmail($email){
-    $this->email=$email;
-  }
+     public function setEmail($email){
+       $this->email=$email;
+      }
 
-  public function setPassword($password){
-    $this->password=$password;
-  }
+     public function setPassword($password){
+        $this->password=$password;
+     }
 
-    public function getEmail(){
-        return $this->email;
-    }
+     public function getEmail(){
+         return $this->email;
+     }
 
-    public function getFirstName(){
+      
+     public function getFirstName(){
         return $this->firstname;
-    }
+     }
 
 
 
@@ -91,6 +101,8 @@ require_once('./Connect.php');
  echo '<pre>';
  var_dump($users);
  echo '</pre>';
+
+ 
 
 
 

@@ -1,7 +1,7 @@
 <?php
 /*
 Creer un dossier ex1
-1)Creer un dossier que vous allez appeler controller et mettez y une classe que voues allez appaler AnimalController. Dans votre AnimalController creer une methode connect pour vous connecter a votre base de données ainsi que une methode getAllAnimals pour recuperer tous vos animaux (pour le moment sous forme de tableau associatifs. Faites une deuxieme methode pour recuperer un animal selon son id
+1)Creer un dossier que vous allez appeler controller et mettez y une classe que voues allez appaler AnimalController. Dans votre AnimalController creer une methode connect pour vous connecter a votre base de données ainsi que une methode getAllAnimals pour recuperer tous vos animaux (pour le moment sous forme de tableau associatifs. Faites une deuxieme methode pour recuperer un animal selon son id et pour l'instancier (si vous en avez marre des animaux, vous pouvez aussi recuperer tous les utilisateurs)
 Dans le dossier ex1
 2) Creer un fichier index.php ainsi que le .htaccess correspondant.
 3) faites un composer require de votre altorouter: https://packagist.org/packages/altorouter/altorouter

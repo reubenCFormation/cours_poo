@@ -1,10 +1,5 @@
 
  
-
-
- 
- 
-
 <?php
  // on a maintenant pas mal vu le mot clé $this. Le mot clé $this fait reference a une INSTANCE de la classe lors que on est en train d'ecrire DANS la classe!
 
