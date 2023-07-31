@@ -23,7 +23,7 @@ class MyChild extends MyParent{
     // ici je peux redefinir mon constructeur dans la classe enfant!
 
     public function __construct($name,$role){
-        echo "L'enfant est en train de s'insancier et non le paren!<br/>";
+        echo "L'enfant est en train de s'insancier et non le parent!<br/>";
         // ici ce n'est pas neccesaire, mais si je veux que l'enfant ait access a la logique du constructeur de la classe parente, je peux faire appel aux constructeurs de mon parent en passant des parametres (etant donné que le constructeur du parent a des parametres!)
         parent::__construct($name,$role);
     }
@@ -32,11 +32,15 @@ class MyChild extends MyParent{
         echo "Bonjour"." ".$this->name." "."dit bonjour depuis l'enfant!<br/>";
     }
 }
-/*
-echo "<h2> Avec le parent! </h2>";
-$parent1=new MyParent("Laurent","parent");
-$parent1->sayHello();
-*/
+
+$newChild=new MyChild("childClass","child");
+$newChild->sayHello();
+
+echo "INSTANCE DE LA CLASSE PARENTE! <br/>";
+
+$newParent=new MyParent("parentClass","parent");
+$newParent->sayHello();
+
 
 /*
 

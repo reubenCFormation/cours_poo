@@ -12,6 +12,8 @@ class ParentClass{
     // cette proprieté étant en privé ne sera pas accessible dans la classe heritante. Il est donc fortement reccomandé, lors que vous voulez y donnez access a vos classes enfants, de mettre le mot protected!
     private $parentOnly="Parent Only";
 
+    protected string $childAccess="Access Allowed!";
+
     
     
 
@@ -25,7 +27,7 @@ class ParentClass{
 
 
     public function getParentMessage(){
-       echo "Je suis le parent et je donne access a cette methode statique a mes enfants!<br/>";
+       echo "Je suis le parent et je donne access a cette methode  a mes enfants!<br/>";
     }
 
     public function getRole(){
@@ -33,18 +35,33 @@ class ParentClass{
     }
 }
 
+
+
 // remarquer le mot extends, ceci indique que notre classe ChildClass aura access a tous les proprietés et methodes dans notre classe ParentClass qui sont soit public soit protected.
 
 class ChildClass extends ParentClass{
     //
 
-    // si le parent a un constructeur, par defaut l'enfant prendra le constructuer du parent si aucun constructuer n'est precisé. Rien ne nous empeche, bien sur, d'ecrire nos propres methodes et proprietés dans notre classe!  
+    // si le parent a un constructeur, par defaut l'enfant prendra le constructuer du parent si aucun constructuer n'est precisé. Rien ne nous empeche, bien sur, d'ecrire nos propres methodes et proprietés dans notre classe! 
+    
+    public function getProtectedProperty(){
+        return $this->childAccess;
+    }
+    
 
 }
 // comme nous pouvons le voir ici, nous n'avons rien rajouté dans notre classe ChildClass. Pourtant, elle arrive bien a avoir access aux methodes et aux proprietés de notre classe ParentClass GRACE au fait que via l'instruction "extends" elle herite des methodes et propreités de la classe ParentClass et donc y a access!
-$child=new ChildClass("child");
+
+
+/*
 $child->getParentMessage();
+echo '<br/>';
+
 echo $child->getRole();
+*/
+
+
+
 
 // bien que accesible dans les enfants de celle ci, la proprieté $role de notre parent n'est pas accessible via une instance en dehors de notre classe
 
