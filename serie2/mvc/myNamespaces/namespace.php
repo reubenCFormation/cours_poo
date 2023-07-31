@@ -1,10 +1,10 @@
 <?php
 
 /*
-    Un namespace en PHP est comme un conteneur virtuelle qui va contenir une certaine arborescence de dossiers et fichiers. Un namespace est un espace "vierge" ou nous pouvons definir les classes que l'on souhaite.Les classes dans un namespace seront definis par un namespace
+    Un namespace en PHP est comme un conteneur virtuelle qui va contenir une certaine arborescence de dossiers et fichiers. Un namespace est un espace "vierge" ou nous pouvons definir les classes que l'on souhaite.Les classes dans un namespace seront definis par ce namespace. Par example, ici si je vais declarer une class MyClass, le nom complet de la classe sera myNamespace\MyClass et non plus MyClass. Les namespaes ont un avantage principale
     1) Notre application peux etre susceptible de grandir. Lorsque elle va grandir, elle se peux que nous allons vouloir avoir le meme nom pour deux classes differrents. Avec les namespaces, ceci est possible, on peux avoir deux classes avec le meme nom et tant que elle se trouvent dans un namespace different, elles seront reconnu comme etant distinct puisque le nom de la classe sera rattaché a son namespace
 
-    2) Le langage PHP a une multitide de classes predefini. Dans un namespace, je peux utiliser le meme nom que une classe PHP et etant donnée que je suis dans un espace de travail "vierge", ca ne sera pas reconnu comme une classe pre-existante de PHP mais comme "ma propre classe"!
+  
 
 */
 
