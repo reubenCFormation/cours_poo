@@ -19,19 +19,26 @@ class Reptile extends Animal{
 
     public function setType($type){
         if($type!="Reptile"){
-            throw new \Exception("Mauvais type preciser!");
+            throw new Exception("Vous deviez preciser le type Reptile");
         }
-        $this->type=$type;
+
+        else{
+            $this->type=$type;
+        }
     }
+
+ 
 
 
    
  
 }
 
-$turtie=new Reptile("Turtle","Turtie",4,80);
+$turtie=new Reptile("turtle","Turtie",4,80);
 // etant donnée que 
 echo $turtie->describeAnimal();
+
+
 
 
 

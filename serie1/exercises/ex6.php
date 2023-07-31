@@ -5,13 +5,18 @@
 
 2)Enlevez vos animaux actuelle dans votre base de données avec la ligne suivante (Truncate Table animals)
 
-3) Rajoutez un champ dans votre base de données en tapant les lignes suivantes dans votre phpmyadmin Alter Table animals ADD COLUMN species VARCHAR (255) NOT NULL. Assurez vous de bien definir le $species dans vos classes enfants (Mammal,Reptile)
+3) Rajoutez un champ dans votre base de données en tapant les lignes suivantes dans votre phpmyadmin Alter Table animals ADD COLUMN species VARCHAR (255) NOT NULL. $species va correspondre a human,dog,lizard etc. Assurez vous que la proprieté $species est bien defini dans les constructeurs de vos classes enfants
 
 4) Dans votre classe Animal, rajoutez une methode  que vous appelera insert qui aura pour but d'inserer un animal dans votre base de données avec tous les champs pertinents (name,type,species,legs,weight isDomestic) Cette fonction doit fonctionner sur vos instances de Mammal et de Reptile. Donc meme si la methode insert sera dans la classe Animal, vous allez y faire appel sur vos instances de Mammal ou de Reptile
 
-5) Enfin, dans vos classes Mammal et Reptile, creer dans chacune une methode statique pour pouvoir recuperer dans votre base de données tous les animaux qui ont le meme type que le $type defini pour votre classe
+5) Dans votre classe Animal, creer une methode qui va pouvoir recuperer tous nos animaux. Retourner un seul tableau qui contiendront vos instances (soit Mammal, soit Reptile) en fonction du type d'animal. Votre methode doit etre statique. Testez l'appel a la methode depuis votre classe Animal (en mode statique)
 
-6) BONUS: Dans votre classe Animal, creer une fonction qui va pouvoir recuperer tous nos animaux. Retourner un seul tableau qui contiendront vos instances (soit Mammal, soit Reptile). Votre fonction doit etre statique
+6)Creer une methode qui va nous retourner le nombre d'animaux domestiques par type (Mammal ou Reptile). Cette methode sera defini dans la classe Animal. Si une instance de Mammal fait appel a cette methode, nous allons voir apparaitre le nombre d'animaux domestiqués qui sont de type Mammal. Si une instance de Retpile fait appel a cette methode, nous allons voir apparaitre le nombre d'animaux domestiqués qui sont de type Reptile. Bonus! Passez cette methode en statique
+
+
+
+
+
 
 
 

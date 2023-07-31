@@ -31,9 +31,7 @@
 
  
 
- 
-
- // pour avoir access au noms de notre classe!
+?>
  
  
 

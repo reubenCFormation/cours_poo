@@ -1,7 +1,7 @@
 <?php
 require_once("./Animal.php");
 class Mammal extends Animal{
-  
+   protected  string $type;
     
     public function __construct($species,$name,$legs,$weight){
         // ici l'enfant va definir $species et $type et via l'heritage il y aura access et pourra modifier/definir les valeurs sans devoir les redeclarer etant donnée que il y hérite
@@ -22,11 +22,17 @@ class Mammal extends Animal{
 
     public function setType($type){
         if($type!="Mammal"){
-            throw new \Exception("Mauvais type preciser!");
-           
+            throw new Exception("Vous deviez preciser le type Mammal");
         }
-        $this->type=$type;
+
+        else{
+            $this->type=$type;
+        }
     }
+
+  
+
+    
 
     
    // ici je dois surcharger $type. Sinon, $type ne sera que defini dans le parent et l'enfant prendra la derniere valeur defini dans le parent étant donnée que la proprieté est statique, il n'y a que une valeur a un moment donnée. Si je ne redefini pas $type dans l'enfant, par defaut il prendra la derniere valeur de $type dans le parent meme si la derniere valeur aurai éetait Reptile par exemple.
@@ -48,9 +54,10 @@ $dog=new Mammal("Dog","Golden",4,80);
 echo $dog->describeAnimal();
 
 
+
 echo '<br/>';
 
-$wolf=new Mammal("Hulk","Monster",9,200);
+$wolf=new Mammal("Hulk","Monster",2,200);
 echo $wolf->describeAnimal();
 
 echo '<br/>';

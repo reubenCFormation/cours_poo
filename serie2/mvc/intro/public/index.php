@@ -41,6 +41,7 @@ if($getMatch){
      si le chemin a pu etre declenché, nous allons etre retourné un tableau avec les informations differents!
 
     */
+    echo "MATCH FOUND! <br/>";
     echo '<pre>';
     var_dump($getMatch);
     echo '</pre>';

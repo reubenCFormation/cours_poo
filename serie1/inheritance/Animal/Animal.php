@@ -21,11 +21,11 @@ class Animal{
             $this->id=$id;
         }
 
-        if($this->weight<100 && $this->legs>=2 && $this->legs<=4 ){
-            $this->isDomestic=true;
+        if($this->weight>100 || $this->legs>4){
+            $this->isDomestic=false;
         }
         else{
-            $this->isDomestic=false;
+            $this->isDomestic=true;
         }
 
        
@@ -35,6 +35,10 @@ class Animal{
 
     public  function getType(){
         return $this->type;
+    }
+
+    public function setType($type){
+        $this->type=$type;
     }
 
    
@@ -83,14 +87,16 @@ class Animal{
         return $this->id;
     }
 
+   
+
    // Les classes enfants (Mammal et Reptile) auront access a cette methode et ils pourront l'appeler. Ici $type et $species n'ont pas de valeur defini dans la classe parente mais étant donnée que c'est l'enfant qui va faire appel a la methode et que l'enfant va redefinir les valeurs, les valeurs seront definis
     public function describeAnimal(){
         if($this->isDomestic){
-            return "Bonjour, je m'apelle"." ".$this->name." "."je pese"." ".$this->weight." "."kilos,je suis un animal du type"." ".$this->type." "."et J'appartiens a l'espece"." ".$this->species." "."J'ai aussi oublier de rajouter que j'ai"." ".$this->legs." "."et je suis domestiqué";
+            return "Bonjour, je m'apelle"." ".$this->name." "."je pese"." ".$this->weight." "."kilos,je suis un animal du type"." ".$this->type." "."et J'appartiens a l'espece"." ".$this->species." "."J'ai aussi oublier de rajouter que j'ai"." ".$this->legs." "."jabmes et je suis domestiqué";
         }
 
         else{
-            return "Bonjour, je m'apelle"." ".$this->name." "."je pese"." ".$this->weight." "."kilos,je suis un animal du type"." ".$this->type." "."et J'appartiens a l'espece"." ".$this->species." "."J'ai aussi oublier de rajouter que j'ai"." ".$this->legs." "."et je suis pas domestiqué!";
+            return "Bonjour, je m'apelle"." ".$this->name." "."je pese"." ".$this->weight." "."kilos,je suis un animal du type"." ".$this->type." "."et J'appartiens a l'espece"." ".$this->species." "."J'ai aussi oublier de rajouter que j'ai"." ".$this->legs." "." jabmes et je suis pas domestiqué!";
         }
         
     }
