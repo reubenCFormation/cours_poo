@@ -30,6 +30,12 @@ class Mammal extends Animal{
         }
     }
 
+    public  function getType(){
+        return $this->type;
+    }
+
+   
+
   
 
     
@@ -57,19 +63,19 @@ echo $dog->describeAnimal();
 
 echo '<br/>';
 
-$wolf=new Mammal("Hulk","Monster",2,200);
-echo $wolf->describeAnimal();
+$hulk=new Mammal("Hulk","Monster",2,200);
+echo $hulk->describeAnimal();
 
 echo '<br/>';
 // on peux dire que notre monstre hulk a pu perdre 100 kilos et que maintenant il devindra domestique!
 
-$wolf->setWeight(100);
+$hulk->setWeight(100);
 // etant donné que j'ai access aux methodes du parent, je peux en utiliser une ici!
-$wolf->setIsDomestic(true);
+$hulk->setIsDomestic(true);
 
 // constatons que notre loup est devenu domestiqué!
 
-echo $wolf->describeAnimal();
+echo $hulk->describeAnimal();
 
 
 

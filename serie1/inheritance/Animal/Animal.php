@@ -7,7 +7,7 @@ class Animal{
     protected int $weight;
     protected bool $isDomestic;
     protected string $species;
-    protected string $type;
+   
     protected string $name;
     // dans mon constructeur, je ne vais pas definir l'espece ou le type, ca sera dans ma classe! Je vais tout de meme devoir definir mes proprietés pour que elle soit reconnu dans la classe enfant!
     public function __construct($name,$legs,$weight,$id=null){
@@ -33,13 +33,7 @@ class Animal{
     // Ici je protege mon setter pour faire en sorte que nous pouvons pas mettre n'importe quoi. Nous devons soit choisir "Reptile" soit "Mammal". On aurai pu continuer a proteger ce code en mettant cette methode dans les classes enfants mais pour le moment ca suffira. Je mets également ma fonction en protected pour m'assurer que elle ne pourra pas étre appeler directement sur une Instance (meme si ce n'est pas strictement neccesaire de faire cela).
  
 
-    public  function getType(){
-        return $this->type;
-    }
-
-    public function setType($type){
-        $this->type=$type;
-    }
+ 
 
    
 

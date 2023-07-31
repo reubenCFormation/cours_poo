@@ -29,6 +29,7 @@ class MyChild extends MyParent{
     }
 
     public function sayHello(){
+        
         echo "Bonjour"." ".$this->name." "."dit bonjour depuis l'enfant!<br/>";
     }
 }
@@ -37,9 +38,10 @@ $newChild=new MyChild("childClass","child");
 $newChild->sayHello();
 
 echo "INSTANCE DE LA CLASSE PARENTE! <br/>";
-
+/*
 $newParent=new MyParent("parentClass","parent");
 $newParent->sayHello();
+*/
 
 
 /*
