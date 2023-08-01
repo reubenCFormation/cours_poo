@@ -28,6 +28,8 @@ $router->setBasePath($baseUrl);
 
 // ici je vais "mapper", ("chercher") des chemins differents. 
 //$router->map("GET","/",["MainController","homePage"]);
+
+
 $router->map("GET","/hello",["MainController","helloPage"],"helloRoute");
 
 $router->map("GET","/randomInteger/[i:value]",["MainController","showRandomInt"],"randomIntRoute");
@@ -45,8 +47,11 @@ if($getMatch){
     echo '<pre>';
     var_dump($getMatch);
     echo '</pre>';
+
+   
    
     if($getMatch["params"]){
+        echo "INSPECT PARAMS!";
         echo '<pre>';
         var_dump($getMatch["params"]);
         echo '</pre>';

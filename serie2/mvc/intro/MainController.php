@@ -17,8 +17,11 @@ class MainController{
     }
 
     public function redirect(){
+      
         header("location:".dirname($_SERVER["SCRIPT_NAME"]));
     }
+
+    
 }
 
 
