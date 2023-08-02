@@ -10,7 +10,9 @@
 
 // ici je peux definir un namespace 
 
-namespace myNamspace;
+namespace myNamespace;
+
+
 
 
 
@@ -22,6 +24,9 @@ $date=new DateTime();
 
 var_dump($date);
 */
+
+
+
 
 
 
