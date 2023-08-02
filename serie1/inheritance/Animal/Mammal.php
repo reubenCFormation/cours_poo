@@ -1,7 +1,9 @@
 <?php
 require_once("./Animal.php");
 class Mammal extends Animal{
-   protected  string $type;
+   protected string $type;
+   protected string $species;
+ 
     
     public function __construct($species,$name,$legs,$weight){
         // ici l'enfant va definir $species et $type et via l'heritage il y aura access et pourra modifier/definir les valeurs sans devoir les redeclarer etant donnée que il y hérite
@@ -33,6 +35,12 @@ class Mammal extends Animal{
     public  function getType(){
         return $this->type;
     }
+
+    public function getSpecies(){
+        return $this->species;
+    }
+
+  
 
    
 

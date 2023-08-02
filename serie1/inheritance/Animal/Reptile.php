@@ -2,6 +2,7 @@
 require_once("./Animal.php");
 class Reptile extends Animal{
     protected string $type;
+    protected string $species;
     // je fais appel au parent
     public function __construct($species,$name,$legs,$weight){
         // je defini que le $type de cette
@@ -31,6 +32,11 @@ class Reptile extends Animal{
         }
     }
 
+    public function getSpecies(){
+        return $this->species;
+    }
+
+  
  
 
 

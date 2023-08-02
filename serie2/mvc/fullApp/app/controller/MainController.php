@@ -8,12 +8,14 @@ class MainController extends BaseController {
         $homeMsg="Here is a simple example of how to render to a home page!";
         // La commande __DIR__ va nous afficher l'emplacement de notre dossier actuelle. Ici nous pouvons voir que nous avons besoin de sortir de notre dossier controller et de rentrer dans notre dossier view et acceder a la page home.php pour pouvoir afficher sont contenu. ensuite nous allons transmettre la variable a la vue!
 
-        
+        // ici je fais appel a la methode statique de mon Model User pour recuperer tous mes utilisateurs!
         $users=User::findAll();
 
-        
-    
+        /*
+        echo "GET DIRECTORY!<br/>";
         echo __DIR__;
+        */
+    
         $this->render("../view/home.php",["message"=>$homeMsg,"myUsers"=>$users]);
     }
 

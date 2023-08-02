@@ -56,7 +56,7 @@ class User{
             $usersObjArr=[];
 
             foreach($users as $user){
-                $newUser=new User($user["firstname"],$user["lastname"],$user["email"],$user["description"],$user["password"]);
+                $newUser=new User($user["firstname"],$user["lastname"],$user["email"],$user["description"],$user["password"],$user["id"]);
                 $usersObjArr[]=$newUser;
             }
            

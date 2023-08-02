@@ -4,18 +4,21 @@ require_once('./register.php');
 
 // EXTRACT EXAMPLE!
 // example  de extract!
+/*
 $arr=["hello","world","how","are","you"];
 
 $extractData=extract(["myKey"=>$arr]);
+
 
 // avec la fonction extract,"myKey" (une clé) a pu devenir une variable qui s'apelle $myKey!" Avec extract, on va devoir utilisé un tableau associatif,sinon ca ne marchera pas etant donné que extract va transformer le nom de la clé en une variable!
 echo "EXTRACT EXAMPLE <br/>";
 echo '<pre>';
 var_dump($myKey);
 echo '</pre>';
+*/
 
 // ici je charge mo
-use controller\MainController;
+
 
 $router=new AltoRouter();
 
