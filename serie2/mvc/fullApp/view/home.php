@@ -13,6 +13,8 @@
             <?php if(isset($message)):?>
             <h4 class="text-info"> La variable transmise a notre vue!: <?php echo $message ?> </h4>
             <?php endif ?>
+
+            
             <!-- Si on a bien des variables transmis a la vue je vais les afficher! -->
             <?php if(isset($myUsers)):?>
                 <table class="table table-bordered">

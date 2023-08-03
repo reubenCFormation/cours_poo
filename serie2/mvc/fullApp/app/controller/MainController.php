@@ -4,18 +4,14 @@ use controller\BaseController;
 use model\User;
 
 class MainController extends BaseController {
-    public function renderHome(){
+    public function renderAllUsers(){
         $homeMsg="Here is a simple example of how to render to a home page!";
         // La commande __DIR__ va nous afficher l'emplacement de notre dossier actuelle. Ici nous pouvons voir que nous avons besoin de sortir de notre dossier controller et de rentrer dans notre dossier view et acceder a la page home.php pour pouvoir afficher sont contenu. ensuite nous allons transmettre la variable a la vue!
 
         // ici je fais appel a la methode statique de mon Model User pour recuperer tous mes utilisateurs!
         $users=User::findAll();
 
-        /*
-        echo "GET DIRECTORY!<br/>";
-        echo __DIR__;
-        */
-    
+        
         $this->render("../view/home.php",["message"=>$homeMsg,"myUsers"=>$users]);
     }
 
@@ -30,8 +26,10 @@ class MainController extends BaseController {
     public function insertUser(){
         // ma variable $_POST est une superglobale, elle est donc accesible partout dans mon script!
         if(!empty($_POST)){
-            if($_POST["firstname"] && $_POST["lastname"] && $_POST["email"] && $_POST["description"] && $_POST["password"]){
+            if(!empty($_POST["firstname"]) && !empty($_POST["lastname"]) && !empty($_POST["email"]) && !empty($_POST["description"])&& !empty($_POST["password"])){
                 // meme logique pour recuperer nos variables $_POST!
+               
+                
                 $firstname=$_POST["firstname"];
                 $lastname=$_POST["lastname"];
                 $email=$_POST["email"];
@@ -45,7 +43,11 @@ class MainController extends BaseController {
                 $getUserIsInserted=$user->insert();
 
                 if($getUserIsInserted){
-                    $this->redirect(dirname($_SERVER["SCRIPT_NAME"]),["message"=>"Utilisateur bien inseré en bdd!"]);
+                    $this->redirect(dirname($_SERVER["SCRIPT_NAME"]));
+                }
+
+                else{
+                    $this->render("../view/insertUser.php",["warningMsg"=>"Une erreur s'est produite lors de votre insertion!"]);
                 }
             }
             else{

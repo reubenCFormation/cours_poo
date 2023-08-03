@@ -11,7 +11,7 @@
         <?php if(isset($warningMsg)):?>
             <h4 class="text-center text-danger"> <?php echo $warningMsg ?> </h4>
         <?php endif ?>
-        Copy
+       
         <!-- Ici avec action, je vais declencher une autre url, et cette url va a son tour appeler un controller et sa methode associé si l'ai bien mappé avec altorouter bien entendu! Je peux faire des controles pour m'assurer que tous mes données sont bien rensiegnés!-->
         <form method="post" action="<?php echo dirname($_SERVER["SCRIPT_NAME"])."/userInserted" ?>">
             <div class="form-group">
@@ -20,7 +20,7 @@
        
             </div>
             <div class="form-group">
-                <label for="exampleInputEmail1">Firstname</label>
+                <label for="exampleInputEmail1">Lastname</label>
                 <input type="text" class="form-control" name="lastname" >
        
             </div>

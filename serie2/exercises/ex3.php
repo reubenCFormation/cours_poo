@@ -22,16 +22,20 @@ PARTIE I)SETUP!
 
 PARTIE II) Consignes 
 1)Rajoutez deux liens dans votre fichier header.php Un lien qui delclenchera la route d'accueil, et un lien qui declenchera la route pour pouvoir inserer un animal.
-2) Creer une route (/) pour pouvoir afficher tous nos animaux. Trouvez un moyen de recuperer tous nos animaux de type Mammal et Reptile (Un tableau qui contiendra des instances de Reptile et de Mammal). Trouvez un moyen d'afficher le resultat dans un tableau html sur notre page d'accueil (home.php)
+
+2) 
+ Version FACILE:  Creer une route (/) pour pouvoir afficher tous nos animaux. Trouvez un moyen de recuperer tous nos animaux et retourner un tableau associatif qui contient tous nos animaux.Ecrivez cette logique dans la classe Animal qui se trouve dans votre dossier model. Ensuite notre classe AnimalController va recuperer le tableau associatif
+
+ Version DIFFICILE: .Creer une route (/) pour pouvoir afficher tous nos animaux. Trouvez un moyen de recuperer tous nos animaux de type Mammal et Reptile (Un tableau qui contiendra des instances de Reptile et de Mammal). Ecrivez cette logique depuis vos classe Reptile et Mammal qui se trouve dans le dossier model Trouvez un moyen d'afficher le resultat dans un tableau html sur notre page d'accueil (home.php). Ensuite notre classe AnimalController va recuprer les deux tableaux que nous avons creer
 
 3)
-  Version Facile: Pour chaque animal dans votre tableau html, creer un lien (ce lien va correspondre a une route) pour pouvoir voir les details d'un animal en particulier. Creer une methode dans la classe Animal que vous allez appeler findById qui va chercher un animal dans la base de données selon son id et qui va renvoyer cette animal sous forme de tableau associatif. Nous allons ensuite recuperer ce tableau associatif depuis notre controlleur et le transmettre a la vue (animal_details.php)
+  Version Facile: Pour chaque animal dans votre tableau html, creer un lien (ce lien va correspondre a une route) pour pouvoir voir les details d'un animal en particulier. Creer une methode dans la classe Animal que vous allez appeler findById qui va chercher un animal dans la base de données selon son id et qui va renvoyer cette animal sous forme de tableau associatif. Nous allons ensuite recuperer ce tableau associatif depuis notre classe AnimalController et le transmettre a la vue (animal_details.php)
 
-  Version Difficile. Meme chose que avant, mais en fonction de si l'animal que nous avons recuperé dans notre methode findById de la classe animal est un Reptile ou un Mammal nous allons creer une instance dans la classe enfant correspondante. Nous allons transmettre une instance de Mammal ou de Reptile a notre view
+  Version Difficile. Meme chose que avant, mais en fonction de si l'animal que nous avons recuperé dans notre methode findById de la classe Animal est un Reptile ou un Mammal nous allons creer une instance dans la Classe enfant correspondante (Mammal ou Reptile). Nous allons transmettre une instance de Mammal ou de Reptile a notre view
 
-4) Faites en sorte de creer une route pour pouvoir nous rendre sur une view html avec un formulaire pour inserer un animal. Cette route va juste nous renvoyer a la vue pour inserer un animal (donc rien besoin de changer dans nos modeles)!
+4) Faites en sorte de creer une route pour pouvoir nous rendre sur une view html avec un formulaire pour inserer un animal. Cette route va juste nous renvoyer a une view pour pouvoir inserer un animal en base de données.
 
-5) Apres avoir pu soumettre le formulaire pour inserer un nouveau animal, faites en sorte de generer une route (en POST) qui va pouvoir reelement inserer un animal en base de données et ensuite lors que votre animal a bien etait insere en bdd, faites une redirection vers la page d'accueil. Hint: Vous auriez besoin de rajouter du code dans vos models ainsi que votre Controller! Bonus: Apres que l'insertion ait reussi, afficher un message de feliciations 
+5) Apres avoir pu acceder aux formulaire pour inserer un nouveau animal, faites en sorte de generer une route (en POST) qui va pouvoir reelement inserer un animal en base de données et ensuite lors que votre animal a bien etait insere en bdd, faites une redirection vers la page d'accueil. Hint: Vous auriez besoin de rajouter du code dans vos models ainsi que votre Controller! Bonus: Apres que l'insertion ait reussi, afficher un message de feliciations
 
 Bonus!
 

@@ -2,6 +2,7 @@
 namespace model;
 use controller\BaseController;
 use PDOException;
+use model\Connect;
 
 class User{
 
@@ -28,7 +29,7 @@ class User{
 
     public function insert(){
         try{
-            $dbConnector=BaseController::connect("serie1_exo_1_solution");
+            $dbConnector=Connect::connect();
             $sql="INSERT INTO users (firstname,lastname,email,password,description) VALUES (?,?,?,?,?)";
             $statement=$dbConnector->prepare($sql);
             $statement->execute([$this->firstname,$this->lastname,$this->email,$this->password,$this->description]);
@@ -46,7 +47,7 @@ class User{
 
     public static function findAll(){
         try{
-            $dbConnector=BaseController::connect("serie1_exo_1_solution");
+            $dbConnector=Connect::connect();
             $sql="SELECT * FROM users";
             $statement=$dbConnector->query($sql);
             // je suis dans un namespace,donc je dois sortir du namespace
@@ -82,6 +83,10 @@ class User{
 
     public function getDescription(){
         return $this->description;
+    }
+
+    public function getId(){
+        return $this->id;
     }
 }
 

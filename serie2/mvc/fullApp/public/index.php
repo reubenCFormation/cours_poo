@@ -17,6 +17,7 @@ var_dump($myKey);
 echo '</pre>';
 */
 
+
 // ici je charge mo
 
 
@@ -26,7 +27,7 @@ $baseUrl=dirname($_SERVER["SCRIPT_NAME"]);
 
 $router->setBasePath($baseUrl);
 
-$router->map("GET","/",["controller\MainController","renderHome"]);
+$router->map("GET","/",["controller\MainController","renderAllUsers"]);
 
 // ici lors que la route /insert et trouvez, je vais faire appel a une autre methode de mon controller pour pouvoir me rendre sur la vue pour inserer un autre utilisateur!
 
