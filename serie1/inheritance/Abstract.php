@@ -9,6 +9,11 @@ abstract class AbstractClass{
     protected string $name;
     protected string $role;
 
+
+    public static function abstractStatic(){
+        echo "Abstract static method!";
+    }
+
     // etant donnée que une classe Abstraite ne peux pas etre instancié, nous n'allons pas ecrire de constructeur dans celle ci!
 
     // si nous mettons le mot clé abstract a une methode, nous allons forcer la classe qui heritera eventuellement a utisliser cette methode et cette instance va definir ce que fait la methode!
@@ -37,6 +42,7 @@ class ConcreteClass extends AbstractClass{
         return $this->name;
     }
 }
+
 
 
 $concreteClass1=new ConcreteClass("concrete","MyConcreteClass");

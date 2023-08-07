@@ -22,7 +22,7 @@
                         <th> prenom </th>
                         <th> nom </th>
                         <th> email </th>
-                        <th>  description </th>
+                        <th> description </th>
                     </thead>
 
                     <tbody>

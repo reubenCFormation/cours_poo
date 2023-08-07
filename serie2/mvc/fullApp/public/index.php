@@ -1,10 +1,12 @@
 <?php
 require_once('../vendor/autoload.php');
+
 require_once('./register.php');
+
 
 // EXTRACT EXAMPLE!
 // example  de extract!
-/*
+
 $arr=["hello","world","how","are","you"];
 
 $extractData=extract(["myKey"=>$arr]);
@@ -15,7 +17,8 @@ echo "EXTRACT EXAMPLE <br/>";
 echo '<pre>';
 var_dump($myKey);
 echo '</pre>';
-*/
+
+
 
 
 // ici je charge mo
@@ -46,6 +49,7 @@ if($getMatch){
     $action=$getMatch["target"][1];
 
     $newController=new $controller();
+   
     $newController->$action();
 }
 

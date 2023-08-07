@@ -19,8 +19,7 @@ interface MyBusinessTemplate{
 
     public function paySalaries();
 
-   
-    
+      
 }
 // ici avec le mot clé implements, je vais FORCER les classes Restaruant et CarDealership de definir les methodes que j'ai indiqué dans mon interface MyBusinessTemplate! La classe pourra tout de meme definir la methode comme elle le souhaite et lui donner les instructions que elle souhaite!
 class Restaurant implements MyBusinessTemplate{

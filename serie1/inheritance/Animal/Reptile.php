@@ -11,7 +11,8 @@ class Reptile extends Animal{
         $this->setType("Reptile");
         // logiquement un espece va decouler d'un $type (Mammal ou Reptile, il serai donc aussi pertinent de definir $species ici)
         $this->species=$species;
-        
+
+      
         parent::__construct($name,$legs,$weight);
 
        

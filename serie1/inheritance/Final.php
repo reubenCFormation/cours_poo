@@ -10,11 +10,14 @@ final class MyFinalClass{
     }
 }
 
+/*
 class ErrorClass extends MyFinalClass{
     public static function getError(){
         echo "Nous allons avoir une erreur lors que nous allons faire appel a cette methode!";
     }
 }
+*/
+
 
 
 /*
@@ -37,6 +40,7 @@ class ChildClass extends ParentClass{
         echo "Ici une erreur va se declencher car je n'ai pas le droit de re-ecrire une methode finale!";
     }
     */
+    
 }
 
 
